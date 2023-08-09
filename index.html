@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/normalize.css">
+    
+</head>
+
+<body>
+<header id="r1">
+    <nav class="navbar">
+        <div>
+            <img src="./img/Frame 7.svg" alt="brackets">
+        </div>
+        <ul class="nav-menu list ">
+            <a href="#r1" class="nav-link"><li class="nav-item">Home</li> </a>
+            <a href="#r3" class="nav-link"><li class="nav-item">About</li></a>
+            <a href="#r4" class="nav-link"><li class="nav-item"> Skills</li></a>
+            <a href="#r5" class="nav-link"><li class="nav-item">Portfolio</li></a>
+            <a href="#r6" class="nav-link"><li class="nav-item">Contact</li></a>
+        </ul>
+        <div class="navButtons">
+            <button class=" hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div><a href="./form.html" class="submit"><button type="submit" value="Submit" class="button"><b>Contact Me</b></button></a></div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section id ="r2">
+        <div class="about" >
+            <p class="bio"><b>Hi, my name is <span class="svitlana"><u> Svitlana Tertychna</u></span> </b><span class="waving-hand">👋</span></p>
+            <span class="bio1">I am a</span>
+            <p class ="bio2"><b>Front-end developer</b></p>
+            <p id="myText"></p>
+        </div>
+        <div class="image">
+            <img src="./img/avatar.svg" alt="avatar">
+        </div>
+    </section>
+
+    <section id="r3">
+        <div class="photo"><img src="./img/me.svg" alt="woman"></div>
+        <div class="me">
+            <div class="btn">Who am I?</div>
+            <div class="heading">About Me</div>
+            <div class="text">Hi! My name is Svitlana Tertychna, and I’m a developer who has passion for building clean web applications with intuitive functionality. I enjoy the process of turning ideas into reality using creative solutions. I’m always curious about learning new skills, tools, and concepts. I have worked on various solo projects.</div>
+            <div class="butn"><a href="./form.html"><button type="submit" value="Submit" class="button"><b>Contact Me</b></button></a></div>
+        </div>
+    </section>
+
+    <section id="r4">
+        <div class="me">
+            <div class="btn" >My skills</div>
+            <div class="heading">What My Programming
+                Skills Include?</div>
+            <div class="text">I develop simple, intuitive and responsive user interface that helps users get things done with less effort and time.
+                <p>I have a confident knowledge of those technologies:</p> 
+            </div>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="butn"><a href="./form.html"><button type="submit" value="Submit" class="button"><b>Contact Me</b></button></a></div>
+        </div>
+    </section>
+    <section id="r5">
+        <div class="work-block">
+            <div class="works">
+                <div class="btn" >My works</div>
+                <div class="heading">Featured works</div>
+                </div>
+            </div>
+            <ul class="list tabs_links">
+                <div class="tablinks active" onclick="openProjects(event, 'all')"><li>All</li></div>
+                <div class="tablinks" onclick="openProjects(event, 'mobile')"><li>Mobile App</li></div>
+                <div class="tablinks" onclick="openProjects(event, 'website')"><li>Website development</li></div>
+            </ul>
+        <div>
+       
+        <div class="tabs">
+            <div id="all" class="tabcontent one">
+                <div class="screenshot">
+                    <div><a href="./info.html#list_burgerdim"><img src="./img/burgerdim.png" alt="burgerdim" width="400" height="500"></a></div>
+                    <div><a href="./info.html#list_pizza"><img src="./img/pizza.png" alt="pizza" width="400" height="500"></a></div>
+                    <div><a href="./info.html#list_barbershop"><img src="./img/DapperBully.png" alt="barbershop" width="400" height="500"></a></div>
+                </div>
+                <div class ="screenshot">
+                    <div><a href="./info.html#list_weather"><img src="./img/weather.jpg" alt="weather" width="400" height="500"></a></div>
+                    <div><a href="./info.html#list_calculator"><img src="./img/calculator.jpg" alt="calculator" width="400" height="500"></a></div>
+                    <div><a href="./info.html#list_timer"><img src="./img/timer.png" alt="timer" width="400" height="500"></a></div>
+                </div>
+            </div>
+            <div id="website" class="tabcontent two">
+                <div class="screenshot">
+                    <div><a href="./info.html#list_burgerdim"><img src="./img/burgerdim.png" alt="burgerdim" width="400" height="500"></a></div>
+                    <div><a href="./info.html#list_pizza"><img src="./img/pizza.png" alt="pizza" width="400" height="500"></a></div>
+                    <div><a href="./info.html#list_barbershop"><img src="./img/DapperBully.png" alt="barbershop" width="400" height="500"></a></div>
+                </div>
+            </div>
+            <div id="mobile" class="tabcontent three">
+                <div class="screenshot">
+                    <div><a href="./info.html#list_weather"><img src="./img/weather.jpg" alt="weather" width="400" height="500"></a></div>
+                    <div><a href="./info.html#list_calculator"><img src="./img/calculator.jpg" alt="calculator" width="400" height="500"></a></div>
+                    <div><a href="./info.html#list_timer"><img src="./img/timer.png" alt="timer" width="400" height="500"></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+</main>
+<footer id="r6">
+    <div class="f1" >
+      <p class="name"><b>Svitlana Tertychna.</b></p>
+      <span class="designer">Front-end developer</span>
+    </div>
+    <div class="f1">
+      <h3>Useful Links</h3>
+      <ul >
+        <li><a href="index.html#r1">Home</a></li>
+        <li><a href="index.html#r3">About</a></li>
+        <li><a href="index.html#r4">Skills</a></li>
+        <li><a href="index.html#r5">Portfolio</a></li>
+        <li><a href="./form.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="f1">
+      <h3>Social Media</h3>
+      <ul>
+        <li><a href="https://www.facebook.com/profile.php?id=100009415407378" target="_blank">Facebook</a></li>
+        <li><a href="https://www.linkedin.com/in/svitlana-tertychna-681a7897" target="_blank">Linkedin</a> </li>
+        <li><a href="https://github.com/tsvetanat">Github</a></li>
+        <li><a href="https://gitlab.com/Tsvetana">Gitlab</a></li>
+      </ul>
+    </div>
+    <div class="f1">
+      <h3>Contact me</h3>
+      <ul>
+        <li><a href="./form.html">Click to contact me</a></li>
+      </ul>
+    </div>
+
+  </footer>
+  <script src="./JS/index.js"></script>
+</body>
+</html>
