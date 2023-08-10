@@ -84,7 +84,8 @@ section .box h4 {
 @media screen and (min-width:0px) and (max-width: 1200px){
 
     section .box {
-        height:100vh;
+        height:max-content;
+        margin: 1em 0.2em 35em 0.2em;
     
     }
 

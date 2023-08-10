@@ -110,7 +110,6 @@ header .navbar .hamburger {
 
 header .navbar .navButtons {
   display:flex;
-  flex-shrink: 50px;
   justify-content: space-between;
 }
 
@@ -194,6 +193,10 @@ section .me {
     flex: 1;
 }
 
+section:nth-of-type(1) {
+    padding-top:0;
+}
+
 section:nth-of-type(1) .svitlana {
     color: var(--yellow);
 }
@@ -259,7 +262,7 @@ section:nth-of-type(1) .waving-hand {
 
 section:nth-of-type(1) .image {
     width:fit-content;
-    margin:6rem auto;
+    margin:2rem auto;
     border: none;
     padding: 1em 0em; 
     transition: all .3s ease;
@@ -561,11 +564,11 @@ footer li a:hover {
     transition-delay: 0s;
 }
 
-@media screen and (min-width:0px) and (max-width: 1024px) {
-    main{
+@media screen and (min-width:0px) and (max-width: 1023px) {
+    /*main{
         padding:1em;
     }
-
+*/
     header .navbar .nav-menu {
         position: fixed;
         z-index: 100;
@@ -577,8 +580,7 @@ footer li a:hover {
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
     header .navbar .nav-menu.active {
@@ -621,8 +623,10 @@ footer li a:hover {
     }
 
     section{
-        height:fit-content;
-        margin-bottom: 10rem;
+        height:100%;
+        /*height:fit-content;*/
+       /* margin-bottom: 10rem;*/
+       margin-bottom: 20rem;
         text-align: center;
     }
     section:nth-of-type(2) .heading,
@@ -640,10 +644,12 @@ footer li a:hover {
         margin:0 auto;
     }
     
-    section:nth-of-type(4) .screenshot img:hover {
+    section:nth-of-type(4) .screenshot img:hover{
         transform:none;
     }
-
+   /* section:nth-of-type(4) .screenshot img:hover {
+        transform:none;
+        opacity: 1;}*/
     footer .name, 
     footer h3 {
         font-size: 1.2rem;
