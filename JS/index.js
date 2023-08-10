@@ -33,17 +33,18 @@ function writeText(id, text, speed){
 
   elem.innerHTML += txt.shift();
   }, speed != undefined ? speed : 100);
-
+  
   return false;
 };
-
+setTimeout(() => 
 writeText(
   "myText",
   [
   "I code beautifully simple things, \n",
   "and I love what I do.\n"
   ]
-);
+), 3000);
+
 
 //dynamic change opacity & positon by observer
 
@@ -56,7 +57,7 @@ sections.forEach((el) => {
 const observerOptions = {
   root: null,
   //rootMargin: "0px",
-  threshold: 0.3
+  threshold: 0.25
 };
 
 function observerCallback(entries) {
@@ -68,15 +69,12 @@ function observerCallback(entries) {
     else {
       entry.target.classList.remove("loaded");
     }
-    // Add the else to fade out images out of the viewport
+    // Add the else if  to fade out images out of the viewport
   });
 }
 
 const observer = new IntersectionObserver(observerCallback, observerOptions);
-
 sections.forEach((el) => observer.observe(el));
-
-
 
 
 //hamburger menu
@@ -90,8 +88,6 @@ function mobileMenu() {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
 }
-
-
 
 navLink.forEach(n => n.addEventListener("click", closeMenu));
 window.addEventListener("scroll", closeMenu);

@@ -111,10 +111,10 @@ export const projects =
                 "https://github.com/tsvetanat/pizza.git", 
                 "https://tsvetanat.github.io/pizza/"
             ),
-            new Project("barberhop",
+            new Project("barbershop",
                 barbershop,
                 "Barber shop Landing Page",
-                `Through this page customers can know about the barbers of the shop and their works.
+                `Through this page customers can know about the barbers of the shop, their works and contact them.
                 This landing page is easy to navigate, user friendly and visually appealing.
                 It displays the most important information in priority format.`, 
                 "HTML5, CSS3", 
