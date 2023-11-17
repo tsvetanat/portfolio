@@ -12,13 +12,11 @@ console.log(mobileInform);
 let websiteInform = projects.get('websiteInfo');
 
 
-
-
 for(let proj of mobileInform.values()) {
   console.log(proj)
-    proj.addMeHtml(mobileList);
+  proj.addMeHtml(mobileList);
 }
   
 for(let proj of websiteInform.values()) {
-    proj.addMeHtml(websiteList);
+  proj.addMeHtml(websiteList);
 }

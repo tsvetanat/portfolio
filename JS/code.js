@@ -69,7 +69,7 @@ export const projects =
             new Project("calculator",
                 calculator,
                 "Calculator App",
-                "Calculator App provides simple and advanced mathematical functions in a realistic designed app.",
+                "Calculator App provides simple mathematical functions in a realistic design.",
                 "HTML5, CSS3, Javascript",
                 "https://github.com/tsvetanat/calculator.git", 
                 "https://tsvetanat.github.io/calculator/"

@@ -8,7 +8,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/normalize.css">
-    
 </head>
 
 <body>
@@ -24,7 +23,7 @@
             <a href="#r5" class="nav-link"><li class="nav-item">Portfolio</li></a>
             <a href="#r6" class="nav-link"><li class="nav-item">Contact</li></a>
         </ul>
-        <div class="navButtons">
+        <div class="nav-buttons">
             <button class=" hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -49,18 +48,24 @@
     </section>
 
     <section id="r3">
-        <div class="photo"><img src="./img/me.svg" alt="woman"></div>
+        <div><img src="./img/me.svg" alt="woman"></div>
         <div class="me">
-            <div class="btn">Who am I?</div>
+            <div class="header-button">Who am I?</div>
             <div class="heading">About Me</div>
             <div class="text">Hi! My name is Svitlana Tertychna, and I’m a developer who has passion for building clean web applications with intuitive functionality. I enjoy the process of turning ideas into reality using creative solutions. I’m always curious about learning new skills, tools, and concepts. I have worked on various solo projects.</div>
-            <div class="butn"><a href="./form.html"><button type="submit" value="Submit" class="button"><b>Contact Me</b></button></a></div>
+            <div class="submit-button">
+                <a href="./form.html">
+                    <button type="submit" value="Submit" class="button">
+                        <b>Contact Me</b>
+                    </button>
+                </a>
+            </div>
         </div>
     </section>
 
     <section id="r4">
         <div class="me">
-            <div class="btn" >My skills</div>
+            <div class="header-button" >My skills</div>
             <div class="heading">What My Programming
                 Skills Include?</div>
             <div class="text">I develop simple, intuitive and responsive user interface that helps users get things done with less effort and time.
@@ -75,71 +80,82 @@
                 <li></li>
                 <li></li>
             </ul>
-            <div class="butn"><a href="./form.html"><button type="submit" value="Submit" class="button"><b>Contact Me</b></button></a></div>
+            <div class="submit-button"><a href="./form.html"><button type="submit" value="Submit" class="button"><b>Contact Me</b></button></a></div>
         </div>
     </section>
     <section id="r5">
         <div class="work-block">
             <div class="works">
-                <div class="btn" >My works</div>
+                <div class="header-button" >My works</div>
                 <div class="heading">Featured works</div>
                 </div>
             </div>
             <ul class="list tabs_links">
                 <div class="tablinks active" onclick="openProjects(event, 'all')"><li>All</li></div>
-                <div class="tablinks" onclick="openProjects(event, 'mobile')"><li>Mobile App</li></div>
-                <div class="tablinks" onclick="openProjects(event, 'website')"><li>Website development</li></div>
+                <div class="tablinks" onclick="openProjects(event, 'apps')"><li>Mobile App</li></div>
+                <div class="tablinks" onclick="openProjects(event, 'websites')"><li>Website development</li></div>
             </ul>
         <div>
-       
         <div class="tabs">
-            <div id="all" class="tabcontent one">
-                <div class="screenshot">
-                    <div><a href="./info.html#list_burgerdim"><img src="./img/burgerdim.png" alt="burgerdim" width="400" height="500"></a></div>
-                    <div><a href="./info.html#list_pizza"><img src="./img/pizza.png" alt="pizza" width="400" height="500"></a></div>
-                    <div><a href="./info.html#list_barbershop"><img src="./img/DapperBully.png" alt="barbershop" width="400" height="500"></a></div>
-                </div>
-                <div class ="screenshot">
-                    <div><a href="./info.html#list_weather"><img src="./img/weather.jpg" alt="weather" width="400" height="500"></a></div>
-                    <div><a href="./info.html#list_calculator"><img src="./img/calculator.jpg" alt="calculator" width="400" height="500"></a></div>
-                    <div><a href="./info.html#list_timer"><img src="./img/timer.png" alt="timer" width="400" height="500"></a></div>
+            <div id="all" class="tabcontent">
+                <div class="carousel-container">
+                    <ul class="carousel">
+                        <li><a href="./info.html#list_burgerdim"><img src="./img/burgerdim.png" alt="burgerdim" width="400" height="500"></a></li>
+                        <li><a href="./info.html#list_pizza"><img src="./img/pizza.png" alt="pizza" width="400" height="500"></a></li>
+                        <li><a href="./info.html#list_barbershop"><img src="./img/DapperBully.png" alt="barbershop" width="400" height="500"></a></li>
+                        <li><a href="./info.html#list_weather"><img src="./img/weather.jpg" alt="weather" width="400" height="500"></a></li>
+                        <li><a href="./info.html#list_calculator"><img src="./img/calculator.jpg" alt="calculator" width="400" height="500"></a></li>
+                        <li><a href="./info.html#list_timer"><img src="./img/timer.png" alt="timer" width="400" height="500"></a></li>
+                    </ul>
+                    <div class="prev">&#10094;</div>
+                    <div class="next">&#10095;</div>
+                    <div class="indicators"></div>
+                </div>    
+            </div>
+            <div id="websites" class="tabcontent" style="display:none">
+                <div class="carousel-container">
+                    <ul class="carousel">
+                        <li><a href="./info.html#list_burgerdim"><img src="./img/burgerdim.png" alt="burgerdim" width="400" height="500"></a></li>
+                        <li><a href="./info.html#list_pizza"><img src="./img/pizza.png" alt="pizza" width="400" height="500"></a></li>
+                        <li><a href="./info.html#list_barbershop"><img src="./img/DapperBully.png" alt="barbershop" width="400" height="500"></a></li>
+                    </ul>
+                    <div class="prev">&#10094;</div>
+                    <div class="next">&#10095;</div>
+                    <div class="indicators"></div>
                 </div>
             </div>
-            <div id="website" class="tabcontent two">
-                <div class="screenshot">
-                    <div><a href="./info.html#list_burgerdim"><img src="./img/burgerdim.png" alt="burgerdim" width="400" height="500"></a></div>
-                    <div><a href="./info.html#list_pizza"><img src="./img/pizza.png" alt="pizza" width="400" height="500"></a></div>
-                    <div><a href="./info.html#list_barbershop"><img src="./img/DapperBully.png" alt="barbershop" width="400" height="500"></a></div>
-                </div>
-            </div>
-            <div id="mobile" class="tabcontent three">
-                <div class="screenshot">
-                    <div><a href="./info.html#list_weather"><img src="./img/weather.jpg" alt="weather" width="400" height="500"></a></div>
-                    <div><a href="./info.html#list_calculator"><img src="./img/calculator.jpg" alt="calculator" width="400" height="500"></a></div>
-                    <div><a href="./info.html#list_timer"><img src="./img/timer.png" alt="timer" width="400" height="500"></a></div>
+            <div id="apps" class="tabcontent" style="display:none">
+                <div class="carousel-container">
+                    <ul class="carousel">
+                        <li><a href="./info.html#list_weather"><img src="./img/weather.jpg" alt="weather" width="400" height="500"></a></li>
+                        <li><a href="./info.html#list_calculator"><img src="./img/calculator.jpg" alt="calculator" width="400" height="500"></a></li>
+                        <li><a href="./info.html#list_timer"><img src="./img/timer.png" alt="timer" width="400" height="500"></a></li>
+                    </ul>
+                    <div class="prev">&#10094;</div>
+                    <div class="next">&#10095;</div>
+                    <div class="indicators"></div>
                 </div>
             </div>
         </div>
     </section>
     
-
 </main>
 <footer id="r6">
-    <div class="f1" >
+    <div class="footer-column" >
       <p class="name"><b>Svitlana Tertychna.</b></p>
       <span class="designer">Front-end developer</span>
     </div>
-    <div class="f1">
+    <div class="footer-column">
       <h3>Useful Links</h3>
       <ul >
-        <li><a href="index.html#r1">Home</a></li>
-        <li><a href="index.html#r3">About</a></li>
-        <li><a href="index.html#r4">Skills</a></li>
-        <li><a href="index.html#r5">Portfolio</a></li>
+        <li><a href="#r1">Home</a></li>
+        <li><a href="#r3">About</a></li>
+        <li><a href="#r4">Skills</a></li>
+        <li><a href="#r5">Portfolio</a></li>
         <li><a href="./form.html">Contact</a></li>
       </ul>
     </div>
-    <div class="f1">
+    <div class="footer-column">
       <h3>Social Media</h3>
       <ul>
         <li><a href="https://www.facebook.com/profile.php?id=100009415407378" target="_blank">Facebook</a></li>
@@ -148,7 +164,7 @@
         <li><a href="https://gitlab.com/Tsvetana">Gitlab</a></li>
       </ul>
     </div>
-    <div class="f1">
+    <div class="footer-column">
       <h3>Contact me</h3>
       <ul>
         <li><a href="./form.html">Click to contact me</a></li>
